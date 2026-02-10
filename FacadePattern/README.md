@@ -365,7 +365,7 @@ By using the FrontDesk facade, clients can efficiently request hotel services wi
 **JLNerecina** - Facade Pattern Lab Activity
 
 ## Date Created
-February 10, 2026
+November 2025
 
 ## References
 - Design Patterns: Elements of Reusable Object-Oriented Software (Gang of Four)
