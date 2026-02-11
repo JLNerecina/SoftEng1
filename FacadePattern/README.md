@@ -66,45 +66,7 @@ The Facade Pattern provides a unified, high-level interface that makes the subsy
 
 ### Class Diagram
 
-```
-                    ┌──────────────────────┐
-                    │  HotelService        │
-                    │   (Interface)        │
-                    ├──────────────────────┤
-                    │ + performService()   │
-                    └──────────────────────┘
-                             △
-                    ┌────────┼───────────┐
-                    │        │           │
-         ┌──────────▼─┐ ┌────▼───────┐ ┌─▼─────────┐
-         │   Valet    │ │HouseKeeping│ │   Cart    │
-         ├────────────┤ ├────────────┤ ├───────────┤
-         │+ pickUp()  │ │+ clean()   │ │+ request()│
-         │+ dropOff() │ │+ inspect() │ │+ return() │
-         └────────────┘ └────────────┘ └───────────┘
-                    △        △          △
-                    │         │          │ 
-            Coordinates all services
-                    │
-         ┌──────────▼──────────────┐
-         │   FrontDesk (Facade)    │
-         ├─────────────────────────┤
-         │ - valet: Valet          │
-         │ - housekeeping: HK      │
-         │ - cart: Cart            │
-         ├─────────────────────────┤
-         │ + checkIn()             │
-         │ + checkOut()            │
-         │ + requestServices()     │
-         └──────────┬──────────────┘
-                    △
-                    │ Uses
-                    │
-         ┌──────────▼──────────────┐
-         │  HotelApp (Client)      │
-         │  Main Application       │
-         └─────────────────────────┘
-```
+![image](https://github.com/JLNerecina/SoftEng1/blob/main/FacadePattern/UML_Simplified%20Hotel%20Management%20System.png)
 
 ## Components
 
